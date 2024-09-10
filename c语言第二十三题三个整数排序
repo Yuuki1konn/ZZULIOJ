@@ -1,0 +1,15 @@
+//我使用的是三元运算符 if有点长就不写了 
+#include<stdio.h>
+int main()
+{
+    int x,y,z,max,small,middle;
+    scanf("%d%d%d",&x,&y,&z);
+    max=(x>y)?x:y;
+    max=(max>z)?max:z;
+    middle=(x>y)?x:y;
+    middle=(middle>z)?z:middle;
+    small=(x>y)?y:x;
+    small=(small>z)?z:small;
+    printf("%d %d %d",max,middle,small);
+    return 0;
+}
