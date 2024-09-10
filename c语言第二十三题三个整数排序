@@ -6,10 +6,11 @@ int main()
     scanf("%d%d%d",&x,&y,&z);
     max=(x>y)?x:y;
     max=(max>z)?max:z;
-    middle=(x>y)?x:y;
-    middle=(middle>z)?z:middle;
+    //middle=(x>y)?x:y;
+    //middle=(middle>z)?z:middle;
     small=(x>y)?y:x;
     small=(small>z)?z:small;
+    middle=x+y+z-max-small//不能通过比较来判断middle..  
     printf("%d %d %d",max,middle,small);
     return 0;
 }
