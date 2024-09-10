@@ -1,0 +1,49 @@
+//if嵌套
+#include<stdio.h>                  
+int main()
+{
+    int a,b,c,max;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b)
+    {
+        if(a>c)//即a>b,a>c
+        max=a;//赋予max a的值
+        else//即a<c,且a>b
+        max=c;
+    }
+    else//即b>a
+    {
+        if(b>c)//即b>a,b>c
+        max=b;
+        else//c>b,b>a
+        max=c;
+    }
+    printf("%d",max);
+    return 0;
+}
+//&&if 防嵌套
+#include<stdio.h>
+int main()
+{
+    int a,b,c,max;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b&&a>c)
+    max=a;
+    else if(b>a&&b>c)
+    max=b;
+    else
+    max=c;
+    printf("%d",max);
+    return 0;
+}
+//三元运算符
+#include<stdio.h>
+int main()
+{
+    int a,b,c,max;
+    scanf("%d%d%d",&a,&b,&c);
+    max=(a>b)?a:b;
+    max=(max>c)?max:c;
+    printf("%d",max);
+    return 0;
+}
