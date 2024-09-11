@@ -1,2 +1,2 @@
 # ZZULIOJ
-oj题
+oj题 (the homework I did in university.)    
